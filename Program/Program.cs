@@ -5,11 +5,12 @@
 */
 
 
-string[] text = {"Hello", "Hi", "Why?", "12,5" ,"yes" ,"no" ,"2022", ":-)","35"};
+string[] text = {"Hello", "Hi", "Why?", "45869" ,"yes" , "23", "no" ,"2022", ":-)","35"};
 string temp = string.Empty;
+
 int count = 0;
 
-for(int i = 0; i < text.Length; i++)
+for(int i = 0; i < text.Length; i++) 
 {
    temp = Convert.ToString(text[i]);
    
@@ -19,14 +20,14 @@ for(int i = 0; i < text.Length; i++)
    }
 }
 
-string[] newText = new string[count];
+string[] newText = new string[count]; 
 
 PrintArray(text);
 Console.WriteLine();
 WriteArray(newText);
 PrintArray(newText);
 
-void WriteArray(string[] array)
+void WriteArray(string[] array) 
 {
     int numbers = 0;
 
@@ -42,7 +43,7 @@ void WriteArray(string[] array)
     }
 }
 
-void PrintArray(string[] array)
+void PrintArray(string[] array) 
 {
     for(int i = 0; i < array.Length - 1; i++)
     {
